@@ -42,3 +42,182 @@
     --black:#000000;
     --purple: #AFADC5;
 }
+*{
+    box-sizing: border-box;
+}
+/* media queries */
+@media (max-width: 600px) {
+    #header-top {
+        flex-direction: column-reverse;
+    }
+    .header-lg-txt h1 {
+        font-size: 64px;
+        text-align: center;
+        font-style: normal;
+    }
+    #light {
+        right: 20% !important;
+    }
+    #camera {
+        right: 10% !important;
+        letter-spacing: .5rem;
+    }
+    #click {
+        right: 20% !important;
+    }
+
+}
+@media (max-width: 1200px) {
+    .header-lg-txt {
+        margin-top: 15%;
+        margin-right: 5%;
+    }
+    .header-lg-txt h1 {
+        font-size: 64px;
+        text-align: center;
+        font-style: normal;
+    }
+}
+
+body{
+    background-color: var(--black-bg) !important;
+}
+
+/* navigation */
+nav {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.home-nav, .explore-nav, .about-nav {
+    color: var(--lilac) !important;
+    text-decoration: none !important;
+    padding: 2%;
+    font-size: medium;
+}
+
+.home-nav:visited,
+.home-nav:hover,
+.about-nav:visited,
+.about-nav:hover,
+.explore-nav:hover,
+.explore-nav:visited {
+    color: var(--lilac) !important;
+    text-decoration: none !important;
+}
+/* top container with headers */
+#header-top {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5%;
+}
+/* header item left with paragraph */
+.header-para {
+    flex:2;
+    padding: 10%;
+   
+}
+.header-para p {
+    text-align: center;
+    font-family: 'Droid Sans' !important;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--neutral);
+    font-size: medium;
+}
+/* explore more button*/
+.explore-btn {
+    background-color: var(--darkPurple) ;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.explore-btn:focus {
+    outline: none !important; 
+}
+
+.explore-btn a {
+    text-align: center;
+    font-family: 'Droid Sans' !important;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none !important;
+    color:var(--neutral) !important;
+    font-size: small !important;
+}
+
+a:visited,
+a:hover {
+   text-decoration: none !important;
+   color: var(--neutral) !important;
+}
+
+.explore-btn .circle {
+    position: absolute;
+    background-color: var(--neutral);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+    
+}
+
+@keyframes scale{
+    to {
+        transform: translate(-50%, -50%) scale(4);
+        opacity: 0;
+    }
+}
+/* header item right with large letters*/
+.header-lg-txt {
+    flex: 2;
+    background-color: var(--black-bg);
+    
+}
+
+.header-lg-txt h1 {
+    text-align: right;
+    position: relative;
+    color: var(--white);
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 40px var(--darkPurple),
+        0 0 80px var(--darkPurple),
+        0 0 90px var(--darkPurple),
+        0 0 100px var(--darkPurple),
+        0 0 150px var(--darkPurple);
+}
+
+.header-txt {
+    position: absolute;
+    font-size: 128px;
+    font-weight: bold;
+    font-style: italic;
+   
+    animation: flicker 2.5s 300ms;
+}
+
+@keyframes flicker {
+    0%, 10%, 21%, 30%, 40.3%, 50%, 60.1%, 70%, 80%, 90% {
+        color: var(--lilac);
+    }
+
+    0%, 10.1%, 24%, 30.1%, 40%, 54%, 62.1%, 70.1%, 82%, 90.1%, 100% {
+        color: var(--white);
+        text-shadow: 0px 0px 20px var(--lilac);
+    }
+}
+
+#light {
+    right: 35%;
+}
+#camera {
+    right: 5%;
+}
+#click {
+    right: 5%;
+}
