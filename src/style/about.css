@@ -17,8 +17,10 @@
     About us: --white
     paragraph: --rose
     Authors: --white
-    card-lower-background: --lilac
+    card-lower-background: --purple
     card-text: --black
+    form-bg: --purple
+    submit: --neutral
     Example:
         p {
             color: var(--rose)
@@ -31,4 +33,5 @@
     --purple: #AFADC5;
     --black-bg: #090909;
     --black: #000000;
+    --neutral: #F1EAEE;
 }
