@@ -56,6 +56,7 @@ function run() {
 
 function changeImage() {
     if(index > carousel_each_img.length - 1) {
+        console.log(index)
         index = 0
     }
     else if (index < 0) {

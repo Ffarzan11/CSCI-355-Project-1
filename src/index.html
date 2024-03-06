@@ -95,19 +95,17 @@
             </div>
         </div>
 
-
+        <!--layer three faq-->
         <div class="spacer wave_two">
             <div class="third-layer">
                 <h1>FAQ</h1>
 
                 <div class="faq-container">
-                    <div class="faq active">
+                    <div class="faq">
                         <h3 class="faq-title">
                             What type of movies can I find on your website?
                         </h3>
-                        <p class="faq-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae amet
-                            nam consequuntur voluptatum commodi ut optio animi accusamus ad sed.
-                        </p>
+                        <p class="faq-text">We have all genres, from action-packed adventures to tearjerking dramas!</p>
                         <button class="faq-toggle">
                             <i class="fas fa-chevron-down"></i>
                             <i class="fas fa-times"></i>
@@ -117,8 +115,9 @@
                         <h3 class="faq-title">
                             How does search work?
                         </h3>
-                        <p class="faq-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque
-                            alias ducimus cupiditate a necessitatibus nemo fugit! Neque, quae maiores!
+                        <p class="faq-text">Finding your next favorite film is a breeze! Just type the title into the
+                            search bar and we'll do the rest. We'll scour our library and serve up the perfect movie
+                            matches in no time!
                         </p>
                         <button class="faq-toggle">
                             <i class="fas fa-chevron-down"></i>
@@ -129,8 +128,9 @@
                         <h3 class="faq-title">
                             Do you offer movie recommendations?
                         </h3>
-                        <p class="faq-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
-                            molestiae? Architecto beatae pariatur debitis harum voluptas alias excepturi rem non!
+                        <p class="faq-text">Sure, we can help you discover your next cinematic adventure! Just tell us
+                            what you're in the mood for, like action, comedy, or something else, and we'll whip up some
+                            personalized recommendations based on your preferences.
                         </p>
                         <button class="faq-toggle">
                             <i class="fas fa-chevron-down"></i>
@@ -138,22 +138,72 @@
                         </button>
                     </div>
                 </div>
-                <div class="container-lg">
-                    <div class="form">
-                        <h2>Write to Us</h2>
-                        <form action="">
-            
-                        </form>
-                    </div>
+                <!--layer three form to write a letter-->
+                <div class="letter-header">
+                    <h1>Write us a letter</h1>
+                </div>
+
+                <div class="container-lg form-container">
+                    <form class="form">
+                        <div class="form-inputs">
+
+                            <div class="form-group">
+                                <label for="name" class="name_label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="email_label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                <small id="emailHelp">We'll never share your email with anyone else.</small>
+                            </div>
+                            <p>Heard about us</p>
+                            <div class="radio-display">
+                                <div class="form-group">
+                                    <input type="radio" class="form-radio-input" id="first_choice" name="radio-group"
+                                        value="first_choice">
+                                    <label for="first_choice">social media</label>
+                                    <ul>
+                                        <li>Facebook</li>
+                                        <li>Twitter</li>
+                                    </ul>
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" class="form-radio-input" id="second_choice" name="radio-group"
+                                        value="second_choice">
+                                    <label for="second_choice"> Advertisement </label>
+                                    <ul>
+                                        <li>Email</li>
+                                        <li>Youtube ads</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="comment" class="comment_label">Comment</label>
+                                <textarea class="form-control" id="comment" rows="3"
+                                    placeholder="Enter your comment"></textarea>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check">
+                                <label class="form-check-label" for="check">I agree with the terms and
+                                    conditions.</label>
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </div>
-
- 
-
         </div>
 
-    
-        
+
+
+    </div>
+
+
+
 
     </div>
     <script src="./script/index.js"></script>
