@@ -4,6 +4,7 @@ const carousel_imgs = document.getElementById('imgs')
 const carousel_left_btn = document.getElementById('left')
 const carousel_right_btn = document.getElementById('right')
 const carousel_each_img = document.querySelectorAll('#imgs img')
+const toggles = document.querySelectorAll('.faq-toggle')
 
 // ripple effect for the explore-btn 
 explore_button.forEach(button => {
@@ -39,7 +40,7 @@ function fixNav() {
         nav.classList.remove('active');
     }
 
-    if(nav.classList.contains('active') && window.scrollY > nav.offsetHeight +2500) {
+    if(nav.classList.contains('active') && window.scrollY > nav.offsetHeight +2050) {
         nav.classList.remove('active');
     }
 }
@@ -88,4 +89,11 @@ carousel_left_btn.addEventListener('click', ()=> {
     index--
     changeImage()
     resetInterval()
+})
+
+//faq toggle
+toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('active') //adding and removing the active class on click
+    })
 })
