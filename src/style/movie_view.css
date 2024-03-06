@@ -18,6 +18,8 @@
 }
 body{
     background-color: var(--black-bg) !important;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 .nav {
     text-align: center;
@@ -50,3 +52,51 @@ body{
     text-decoration: none !important;
     color: var(--lilac) !important;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    font-family: 'Poppins' !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 550px !important;
+    margin-top: 5%;
+    padding-bottom: 1rem;
+}
+
+.image-container {
+    border: 2px solid var(--white);
+}
+
+img {
+    width: 250px !important;
+    height: 500;
+    object-fit: cover;
+    align-self: center !important;
+    
+}
+.movie-header h3 {
+    font-size: 24px;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.info-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header {
+    flex: 2;
+}
+.desc {
+    flex: 4;
+}
+
+
+
