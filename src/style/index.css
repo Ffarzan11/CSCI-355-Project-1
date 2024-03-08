@@ -753,14 +753,22 @@ form {
 #email {
     color: gray;
     font-family: 'Poppins' !important;
-    font-weight: lighter !important;
+    font-weight: normal !important;
     font-size: 10px !important;
 } 
 
-#comment {
+#comment::placeholder,
+#name::placeholder,
+#email::placeholder {
     color: gray;
     font-family: 'Poppins' !important;
     font-weight: lighter !important;
+    font-size: 10px !important;
+}
+#comment {
+    color: gray;
+    font-family: 'Poppins' !important;
+    font-weight: normal !important;
     font-size: 10px !important;
 }
 

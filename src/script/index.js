@@ -8,7 +8,7 @@ const toggles = document.querySelectorAll('.faq-toggle')
 
 // ripple effect for the explore-btn 
 explore_button.forEach(button => {
-    button.addEventListener('click', function(e) {
+    button.addEventListener('click', function (e) {
         const x = e.clientX; //x-position wrt viewport
         const y = e.clientY; //y-position wrt viewport
 
@@ -33,14 +33,14 @@ window.addEventListener('scroll', fixNav)
 
 function fixNav() {
     console.log(window.scrollY, nav.offsetHeight)
-    if(window.scrollY > nav.offsetHeight + 1050){
+    if (window.scrollY > nav.offsetHeight + 1050) {
         nav.classList.add('active');
     }
-    else{
+    else {
         nav.classList.remove('active');
     }
 
-    if(nav.classList.contains('active') && window.scrollY > nav.offsetHeight +2050) {
+    if (nav.classList.contains('active') && window.scrollY > nav.offsetHeight + 2050) {
         nav.classList.remove('active');
     }
 }
@@ -55,38 +55,41 @@ function run() {
 }
 
 function changeImage() {
-    if(index > carousel_each_img.length - 1) {
-        console.log(index)
+    //If the carousel reaches the last image, the index is set to 0 to bring it to first image
+    if (index > carousel_each_img.length - 1) {
         index = 0
     }
+    //if the carousel tries to go back after first image, the index is set to 0 so that it can't go beyond that or cause error
     else if (index < 0) {
         index = carousel_each_img.length - 1
     }
 
-    if(window.innerWidth >= 300 && window.innerWidth <= 600) {
-        console.log(innerWidth)
-        carousel_imgs.style.transform = `translateX(${-index*236}px)`
+    //changes the images 
+    if (window.innerWidth >= 300 && window.innerWidth <= 600) {
+        carousel_imgs.style.transform = `translateX(${-index * 236}px)`
     }
-    else if(window.innerWidth >= 700 && window.innerWidth <= 1000) {
-        carousel_imgs.style.transform = `translateX(${-index*339}px)`
+    else if (window.innerWidth >= 700 && window.innerWidth <= 1000) {
+        carousel_imgs.style.transform = `translateX(${-index * 339}px)`
     }
     else {
-        carousel_imgs.style.transform = `translateX(${-index*339}px)`
+        carousel_imgs.style.transform = `translateX(${-index * 339}px)`
     }
-    
+
 }
 
+//resets interval when it is called
 function resetInterval() {
     clearInterval(interval)
     interval = setInterval(run, 2000)
 }
-carousel_right_btn.addEventListener('click', ()=> {
+//adding functionality to carousel arrow buttons
+carousel_right_btn.addEventListener('click', () => {
     index++
     changeImage()
     resetInterval()
 })
 
-carousel_left_btn.addEventListener('click', ()=> {
+carousel_left_btn.addEventListener('click', () => {
     index--
     changeImage()
     resetInterval()
