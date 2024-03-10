@@ -5,6 +5,7 @@ const carousel_left_btn = document.getElementById('left')
 const carousel_right_btn = document.getElementById('right')
 const carousel_each_img = document.querySelectorAll('#imgs img')
 const toggles = document.querySelectorAll('.faq-toggle')
+const accountName = document.querySelectorAll('.login-link')
 
 // ripple effect for the explore-btn 
 explore_button.forEach(button => {
@@ -32,7 +33,6 @@ explore_button.forEach(button => {
 window.addEventListener('scroll', fixNav)
 
 function fixNav() {
-    console.log(window.scrollY, nav.offsetHeight)
     if (window.scrollY > nav.offsetHeight + 1050) {
         nav.classList.add('active');
     }
