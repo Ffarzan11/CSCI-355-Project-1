@@ -34,72 +34,108 @@
             </div>
         </nav>
         <!--Rest of the code goes here-->
-    </div>
 
-    <div class="about-desc">
-            <p>
-                Remember the thrill of flipping through dog-eared movie
-                magazines, anticipating the next blockbuster? We do too.
-                That's why we created this website - A digital haven for
-                movie lovers who cherish the power of film to transport
-                us, inspire us, and make us laugh (or cry) uncontrollably.
-                Join us as we celebrate classic cinema and discover the
-                gems of tomorrow!
-            </p>
-        </div>
-    </div>
-    <div class="authors">
-        <p><i>Authors</i></p>
-    </div>
+        <div class="container-fluid cover">
+            <div class="container-fluid about-container">
+                <p class="about">About</p>
+                <p class="about-desc">
+                    Remember the thrill of flipping through dog-eared movie
+                    magazines, anticipating the next blockbuster? We do too.
+                    That's why we created this website - A digital haven for
+                    movie lovers who cherish the power of film to transport
+                    us, inspire us, and make us laugh (or cry) uncontrollably.
+                    Join us as we celebrate classic cinema and discover the
+                    gems of tomorrow!
+                </p>
+            </div>
 
-    <div class="container">
-        <div class="row gx-8">
-            <div class="col">
-                <div class="col-sm-4 d-flex justify-content-center">
-                    <img src="images/portrait1.jpeg" class="card-img-top" alt="User1" width="360" height="360">
-                    <div class="card-body">
-                      <p class="card-text">Hello! I am Farhikta, the designer of this website</p>
+            <div class="authors">
+                <p>Authors</p>
+            </div>
+
+            <div class="container card-grp">
+                <div class="row gx-8">
+                    <div class="col">
+                        <div class="col-sm-4 d-flex justify-content-center ">
+                            <div class="card">
+                                <img src="images/portrait1.jpeg" class="card-img-top" alt="author1" width="360"
+                                    height="360">
+                                <div class="card-body">
+                                    <p class="card-text">Hello! I am Farhikhta Farzan, the designer and programmer of
+                                        this
+                                        website
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-sm-4 d-flex justify-content-center">
+                            <div class="card">
+                                <img src="images/portrait2.jpeg" class="card-img-top" alt="author2" width="360"
+                                    height="360">
+                                <div class="card-body">
+                                    <p class="card-text">Hello! I am Alyan Irdam, the programmer of this website</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-sm-4 d-flex justify-content-center">
+                            <div class="card">
+                                <img src="images/portrait3.jpeg" class="card-img-top" alt="author3" width="360"
+                                    height="360">
+                                <div class="card-body">
+                                    <p class="card-text"> Hello! I am Nickolas Wang, the programmer of this website</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 d-flex justify-content-center">
-                <div class="card">
-                    <img src="images/portrait2.jpeg" class="card-img-top" alt="User2" width="360" height="360">
-                    <div class="card-body">
-                      <p class="card-text">Hello! I am Alyan Irdam, the designer of this website</p>
-                    </div>
-                </div>
+            <div class="letter-header">
+                <h1>Mailing List</h1>
             </div>
-            <div class="col-sm-4 d-flex justify-content-center">
-                <div class="card">
-                    <img src="images/portrait3.jpeg" class="card-img-top" alt="User3" width="360" height="360">
-                    <div class="card-body">
-                      <p class="card-text">Hello! I am Nickolas, the designer of this website</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="abt-header">
-        <h1>Mailing List</h1>
-    </div>
+            <div class="container-lg form-container">
+                <form class="form">
+                    <div class="form-inputs">
 
-    <div class="container-abt abt-form-container">
-        <form class="abt-form">
-            <div class="name-email">
-                <label for="fname">Name:</label><br>
-                <input type="text" id="fname" name ="fname"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
+                        <div class="form-group">
+                            <label for="name" class="name_label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="email_label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            <small id="emailHelp">We'll never share your email with anyone else.</small>
+                        </div>
+                        <p>Text</p>
+                        <div class="radio-display">
+                            <div class="form-group">
+                                <input type="radio" class="form-radio-input" id="first_choice" name="radio-group"
+                                    value="first_choice">
+                                <label for="first_choice">yes</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" class="form-radio-input" id="second_choice" name="radio-group"
+                                    value="second_choice">
+                                <label for="second_choice"> no </label>
+                            </div>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check">
+                            <label class="form-check-label" for="check">I agree with the terms and
+                                conditions.</label>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
-            <div class="radio-yesno">
-                <h2>Text?</h2>
-                <input type="radio" id="yes" name="option1" value="YES">
-                <label for="yes">Yes</label><br> 
-                <input type="radio" id="no" name="option2" value="NO">
-                <label for="no">No</label><br>   
-            </div>    
-        </form>
+
+
     </div>
     <script src="./script/about.js"></script>
 </body>
