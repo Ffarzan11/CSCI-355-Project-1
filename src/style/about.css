@@ -35,7 +35,7 @@
     --black: #000000;
     --neutral: #F1EAEE;
 }
-body{
+body {
     background-color: var(--black-bg) !important;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -45,7 +45,7 @@ body{
     font-family: 'Poppins' !important;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--black-bg);
-    position: fixed;
+    position: fixed, sticky;
     left: 0;
     right: 0;
     top: 0;
@@ -70,4 +70,80 @@ body{
 .explore-nav:visited {
     text-decoration: none !important;
     color: var(--lilac) !important;
+}
+
+.about-us p {
+    padding: 40px;
+    color: var(--white);
+    font-style: none !important;
+    text-align: center;
+    font-family: "Poppins" !important;
+    font-size: 80px;
+}
+
+.about-desc p {
+    padding: 30px;
+    text-align: center;
+    color: var(--lilac);
+    font: "Poppins";
+    font-size: 24px;
+}
+
+.authors p {
+    color: var(--white);
+    font-weight: lighter;
+    padding: 32px;
+    text-align: center;
+    font: "Poppins";
+    font-size: 55px;
+}
+
+.container p {
+    font: "Poppins";
+    font-weight: lighter;
+    font-size: 22px;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--purple);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.about-form p {
+    padding: 40px;
+    margin-left: 345px;
+    color: var(--white);
+    font: "Poppins";
+    font-size: 30px;
+}
+
+.abt-header {
+    text-align: center;
+    font: "Poppins";
+    color: var(--white);
+}
+
+.abt-form-container {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+form {
+    background-color: var(--darkPurple);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    width: 40rem;
+    border-radius: 10px;
+    padding: 2rem;
+    font-family: "Poppins";
+    font-weight: normal;
+    color: var(--white);
+}
+
+#fname, #email {
+
 }
