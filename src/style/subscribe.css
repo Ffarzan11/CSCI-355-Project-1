@@ -64,7 +64,8 @@ form {
 #email,
 #card, 
 #address,
-#cvv {
+#cvv,
+#date {
     color: gray;
     font-family: 'Poppins' !important;
     font-weight: normal !important;
@@ -76,7 +77,8 @@ form {
 #email::placeholder,
 #card::placeholder
 #address::placeholder,
-#cvv::placeholder {
+#cvv::placeholder, 
+#date::placeholder{
     color: gray;
     font-family: 'Poppins' !important;
     font-weight: lighter !important;
@@ -94,7 +96,8 @@ form {
 #comment:focus,
 #card:focus,
 #address:focus,
-#cvv:focus{
+#cvv:focus,
+#date:focus{
    border: 0 !important;
    outline: 0 !important;
    box-shadow: none !important ;
@@ -106,7 +109,8 @@ form {
 .comment_label,
 .card_label,
 .address_label,
-.cvv_label{
+.cvv_label,
+.date_label{
     font-family: 'Poppins' !important;
     font-weight: normal !important;
     font-family: Arial, Helvetica, sans-serif;

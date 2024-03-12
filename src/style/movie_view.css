@@ -70,9 +70,9 @@ body{
 
 img {
     width: 250px !important;
-    height: 500;
-    object-fit: cover;
+    object-fit: cover !important;
     align-self: center !important;
+    margin-top: 10px;
     
 }
 .movie-header h3 {
@@ -82,7 +82,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .info-holder {
@@ -96,6 +95,10 @@ img {
 }
 .desc {
     flex: 4;
+}
+
+#streaming-details {
+    font-style: italic;
 }
 
 
