@@ -27,37 +27,30 @@ setInterval(function () {
 
 //genre buttons
 actionBtn.addEventListener('click', () => {
-    //call some function that shows the sorted genre movies
     let genreID = 28
     fetchPopularMovies(genreID)
     categoryTitle.innerHTML = "Popular in " + actionBtn.innerHTML
 })
 adventureBtn.addEventListener('click', () => {
-    //call some function that shows the sorted genre movies
     let genreID = 12
     fetchPopularMovies(genreID)
     categoryTitle.innerHTML = "Popular in " + adventureBtn.innerHTML
 })
 romanceBtn.addEventListener('click', () => {
-    //call some function that shows the sorted genre movies
     let genreID = 10749
     fetchPopularMovies(genreID)
     categoryTitle.innerHTML = "Popular in " + romanceBtn.innerHTML
 })
 thrillerBtn.addEventListener('click', () => {
-    //call some function that shows the sorted genre movies
     let genreID = 53
     fetchPopularMovies(genreID)
     categoryTitle.innerHTML = "Popular in " + thrillerBtn.innerHTML
 })
 comedyBtn.addEventListener('click', () => {
-    //call some function that shows the sorted genre movies
-    let genreID = 35
     fetchPopularMovies(genreID)
     categoryTitle.innerHTML = "Popular in " + comedyBtn.innerHTML
 })
 horrorBtn.addEventListener('click', () => {
-    //call some function that shows the sorted genre movies
     let genreID = 27
     fetchPopularMovies(genreID)
     categoryTitle.innerHTML = "Popular in " + horrorBtn.innerHTML
@@ -85,7 +78,7 @@ const apiKey = "d4548a42da69d5c734067c281381b8b8";
 const imageBaseUrl = "https://image.tmdb.org/t/p/w300";
 
 
-// get movies now playing
+
 async function fetchMoviesNowPlaying() {
     const response = await fetch(`${apiBaseUrl}/movie/now_playing?api_key=${apiKey}`);
     const jsonResponse = await response.json();
@@ -118,7 +111,7 @@ function displayGenreMovies(movies, genreID) {
     movieCards.forEach(card => card.addEventListener('click', handleMovieClick));
 }
 
-//show the movies currently playing 
+//  show the movies currently playing as a grid format
 function displayMovies(movies) {
     moviesGrid.innerHTML = movies.map((movie) =>
 
