@@ -1,20 +1,20 @@
-
-
-const search = document.querySelector('.search');
-const btn = document.querySelector('.btn');
-const input = document.querySelector('.input');
-const searchInp = document.getElementById('search-input');
-const searcbtn = document.getElementById('search-btn');
+const search = document.querySelector('.search')
+const btn = document.querySelector('.btn')
+const input = document.querySelector('.input')
+const searchInp = document.getElementById('search-input')
+const searcbtn = document.getElementById('search-btn')
 const moviesGrid = document.getElementById("movies-grid");
 const categoryTitle = document.getElementById("category-title");
-const carousel = document.getElementById('carousel');
-const genreID = document.getElementById('genre-ID');
-const actionBtn = document.getElementById('action');
-const adventureBtn = document.getElementById('adventure');
-const romanceBtn = document.getElementById('romance');
-const thrillerBtn = document.getElementById('thriller');
-const horrorBtn = document.getElementById('horror');
-const comedyBtn = document.getElementById('comedy');
+const carousel = document.getElementById('carousel')
+const genreID = document.getElementById('genre-ID')
+const actionBtn = document.getElementById('action')
+const adventureBtn = document.getElementById('adventure')
+const romanceBtn = document.getElementById('romance')
+const thrillerBtn = document.getElementById('thriller')
+const horrorBtn = document.getElementById('horror')
+const comedyBtn = document.getElementById('comedy')
+
+
 
 let counter = 1
 setInterval(function () {
@@ -81,7 +81,7 @@ btn.addEventListener('click', () => {
 
 
 const apiBaseUrl = "https://api.themoviedb.org/3";
-const apiKey = 'd4548a42da69d5c734067c281381b8b8';
+const apiKey = "d4548a42da69d5c734067c281381b8b8";
 const imageBaseUrl = "https://image.tmdb.org/t/p/w300";
 
 
@@ -98,16 +98,16 @@ async function fetchPopularMovies(genreID) {
     const response = await fetch(`${apiBaseUrl}/movie/popular?api_key=${apiKey}`);
     const jsonResponse = await response.json();
     const movies = jsonResponse.results;
-     displayGenreMovies(movies, genreID)
-     //console.log(movies);
+    displayGenreMovies(movies, genreID)
+    //console.log(movies);
 }
 
 function displayGenreMovies(movies, genreID) {
     const genreMovies = movies.filter((movie) =>
         movie.genre_ids.includes(genreID));
     console.log(genreMovies)
-    moviesGrid.innerHTML =genreMovies.map((movies) =>
-    `<div class = 'movie-card' data-movie-id = "${movies.id}"> 
+    moviesGrid.innerHTML = genreMovies.map((movies) =>
+        `<div class = 'movie-card' data-movie-id = "${movies.id}"> 
         <img src="${imageBaseUrl}${movies.poster_path}"/>
         <p class = "movie-name">${movies.title}</p>
         <p>Rating ⭐ ${movies.vote_average.toFixed(2)}</p>

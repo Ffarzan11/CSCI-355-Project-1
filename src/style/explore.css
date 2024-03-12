@@ -214,7 +214,6 @@ body {
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
-    position: relative;
 }
 
 .slide img {
@@ -355,8 +354,7 @@ body {
 }
 
 .genre-button {
-    font-family: 'Droid Sans' !important;
-    font-family: Arial, Helvetica, sans-serifu;
+    font-family: 'Droid Sans';
     font-size: 20px;
     position: relative;
     display: inline-block;
@@ -364,17 +362,13 @@ body {
     background-color: var(--darkPurple);
     color: white;
     cursor: pointer;
-    font-weight: lighter;
 }
-
 
 .sub-buttons {
     display: none;
     position: absolute;
     min-width: 100px;
 }
-
-
 
 .genre-button:hover .sub-buttons {
     display: block;
