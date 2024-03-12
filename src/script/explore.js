@@ -98,7 +98,6 @@ async function fetchPopularMovies(genreID) {
 function displayGenreMovies(movies, genreID) {
     const genreMovies = movies.filter((movie) =>
         movie.genre_ids.includes(genreID));
-    console.log(genreMovies)
     moviesGrid.innerHTML = genreMovies.map((movies) =>
         `<div class = 'movie-card' data-movie-id = "${movies.id}"> 
         <img src="${imageBaseUrl}${movies.poster_path}"/>
@@ -111,7 +110,7 @@ function displayGenreMovies(movies, genreID) {
     movieCards.forEach(card => card.addEventListener('click', handleMovieClick));
 }
 
-//  show the movies currently playing as a grid format
+//o  show the movies currently playing as a grid format
 function displayMovies(movies) {
     moviesGrid.innerHTML = movies.map((movie) =>
 
